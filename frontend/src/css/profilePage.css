@@ -1,0 +1,170 @@
+
+
+.profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.profile-card {
+    display: flex;
+    /* width: 300px;
+    height: 300px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--card-shadow-color);
+    position: relative;
+}
+.profile-card h2 {
+    margin-bottom: 20px;
+}
+
+.profile-avatar-container {
+    position: relative;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.avatar-edit-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--button-background-color);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.name-edit-icon {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.reset-password {
+    margin-top: 10px;
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+.reset-password:hover {
+    color: var(--link-hover-color);
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box {
+    background: var(--card-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--card-shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.dialog-box input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--dropdown-border-color);
+    border-radius: 5px;
+    background-color: var(--dropdown-background-color);
+    color: var(--text-color);
+}
+
+.dialog-box button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-background-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.dialog-box button:hover {
+    background: var(--button-hover);
+}
+
+.avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.avatar-item {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.avatar-item.selected {
+    border-color: var(--button-background-color);
+}
+
+.avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+body.dark-mode .profile-page,
+body.dark-mode .profile-card,
+body.dark-mode .dialog-box {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark-mode .profile-avatar,
+body.dark-mode .avatar-img {
+    border-color: var(--card-border-color);
+}
+
+body.dark-mode .avatar-edit-icon,
+body.dark-mode .name-edit-icon {
+    color: var(--text-color);
+}
+
+body.dark-mode .reset-password {
+    color: var(--link-color);
+}
+
+body.dark-mode .reset-password:hover {
+    color: var(--link-hover-color);
+}
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}

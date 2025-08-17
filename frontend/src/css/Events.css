@@ -1,0 +1,214 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.header {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--card-background-color);
+    box-shadow: 0 2px 4px var(--card-shadow-color);
+}
+
+.filters input[type="date"],
+.filters select {
+    padding: 5px;
+    border: 1px solid var(--dropdown-border-color);
+    border-radius: 5px;
+    background-color: var(--dropdown-background-color);
+    color: var(--text-color);
+}
+
+.filters button {
+    background-color: var(--button-background-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover {
+    background-color: var(--button-hover);
+}
+
+.new-event {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--card-background-color);
+    box-shadow: 0 2px 4px var(--card-shadow-color);
+}
+
+.new-event input[type="text"],
+.new-event input[type="date"],
+.new-event select {
+    padding: 5px;
+    border: 1px solid var(--dropdown-border-color);
+    border-radius: 5px;
+    background-color: var(--dropdown-background-color);
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+.new-event button {
+    background-color: var(--button-background-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.new-event button:hover {
+    background-color: var(--button-hover);
+}
+
+.event-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming-events-section,
+.past-events-section {
+    width: 48%;
+    background-color: var(--card-background-color);
+    box-shadow: 0 2px 4px var(--card-shadow-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--card-background-color);
+    box-shadow: 0 2px 4px var(--card-shadow-color);
+    border-radius: 5px;
+}
+
+.event:last-child {
+    margin-bottom: 0;
+}
+
+.event .event-line {
+    width: 5px;
+    height: 100%;
+    background-color: var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.event .event-icon-container {
+    background-color: var(--background-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px var(--card-shadow-color);
+}
+
+.event .event-icon {
+    color: var(--link-color);
+    font-size: 24px;
+}
+
+.event .event-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.event .event-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--header-text-color);
+}
+
+.event .event-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+}
+.event .event-event {
+    max-width: 300px;
+/* Max width for the description */
+    word-wrap: break-word;
+    /* Ensures the text wraps */
+    overflow-wrap: break-word;
+    /* Break long words if necessary */
+    white-space: pre-line;
+    /* Preserve line breaks in the text */
+}
+
+.event-description input[type="text"] {
+    max-width: 300px;
+    padding: 5px;
+    border: 1px solid var(--dropdown-border-color);
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 5px;
+    background-color: var(--dropdown-background-color);
+    color: var(--text-color);
+}
+
+.event-description button {
+    background-color: var(--button-background-color);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.event-description button:hover {
+    background-color: var(--button-hover);
+}
+
+.event-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.event-actions .edit-icon,
+.event-actions .delete-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: var(--link-color);
+}
+
+.event-actions .edit-icon:hover,
+.event-actions .delete-icon:hover {
+    color: var(--link-hover-color);
+}
+

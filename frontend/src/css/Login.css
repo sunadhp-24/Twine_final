@@ -1,0 +1,129 @@
+.login-page {
+    background-color: #1e1e2f;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2e2e4d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    /* Adjust width and height as needed */
+    width: 224px;
+    height: 75px;
+    padding-bottom: 20px;
+    /* Center the image horizontally and vertically */
+    display: block;
+    margin: 0 auto;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cfcfe0;
+}
+
+.form-input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #444466;
+    border-radius: 4px;
+    background-color: #3e3e5d;
+    color: #ffffff;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-error {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.button {
+    padding: 10px;
+    width: 95%;
+    background-color: #667eea;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #5a67d8;
+}
+
+.switch-page {
+    text-align: center;
+    margin-top: 10px;
+    color: #667eea;
+    cursor: pointer;
+}
+
+.switch-page:hover {
+    text-decoration: underline;
+}
+
+.register-avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.register-avatar-item {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.register-avatar-item.selected {
+    border-color: #667eea;
+}
+
+.resgister-avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.api-error {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 107, 107, 0.1);
+    border: 1px solid #ff6b6b;
+    border-radius: 4px;
+}
